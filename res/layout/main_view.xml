@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+
+    android:background="#000000">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Results"
+        android:textSize="50dp"
+        android:id="@+id/tvResults"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/app_name"
+        android:textSize="25dp"
+        android:id="@+id/tvItemName"
+        android:layout_below="@+id/tvResults"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <ListView
+        android:background="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemList"
+        android:layout_below="@+id/bMoreInfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More Info"
+        android:id="@+id/bMoreInfo"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/tvItemName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivProd"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/itemList"
+        android:layout_below="@+id/tvResults"
+        android:layout_toRightOf="@+id/tvItemName"
+        android:layout_alignTop="@+id/tvItemName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:id="@+id/bGoogle"
+        android:textColor="#ffffff"
+        android:layout_toRightOf="@+id/bHistory"
+        android:layout_below="@+id/tvItemName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price History"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bHistory"
+        android:layout_toRightOf="@+id/bMoreInfo"
+        android:layout_below="@+id/tvItemName"
+         />
+</RelativeLayout>
